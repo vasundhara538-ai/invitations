@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Hearts, One Destiny, Forever in Elegance</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #06142b;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Golden Frame */
+.frame {
+    border: 4px solid #d4af37;
+    border-radius: 18px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 35px rgba(212,175,55,0.5);
+}
+
+/* Title */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #f9d471;
+    margin-bottom: 10px;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+    from { text-shadow: 0 0 10px #d4af37; }
+    to { text-shadow: 0 0 25px #ffdd8a; }
+}
+
+/* Names */
+.names {
+    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+    margin: 15px 0;
+}
+.names span {
+    color: #d4af37;
+    font-size: 40px;
+}
+
+/* Details */
+.details {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e6e6e6;
+    margin: 25px 0;
+}
+
+/* Dolls */
+.dolls {
+    width: 150px;
+    margin: 10px auto;
+    animation: bounce 3s infinite ease-in-out;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #f0e4c4;
+}
+</style>
+</head>
+<body>
+
+<!-- Hidden Autoplay Music -->
+<audio id="bgmusic" autoplay loop>
+  <source src="forever you and me-Female.mp3" type="audio/forever you and me-Female.mp3">
+</audio>
+
+<div class="frame">
+
+    <h1>💛 Two Hearts, One Destiny, Forever in Elegance 💛</h1>
+
+    <div class="names">
+        Vasundhara <br><span>&</span><br> John Manoj
+    </div>
+
+    <img src="bubududu.webp" class="dolls">
+
+    <div class="details">
+        With heartfelt joy, we invite you to bless us as two souls unite in love.  
+        <br><br>
+        📅 <b>Date:</b> Jun  
+        <br>
+        ⏰ <b>Time:</b> 6:00 PM  
+        <br>
+        📍 <b>Venue:</b> Sri Convension Hall
+    </div>
+
+    <div class="footer">
+        Your presence is our greatest gift. 💛
+    </div>
+
+</div>
+
+<script>
+// auto-fix: if fonts fail to load some browsers may block; no-op but helpful to detect
+window.addEventListener('error', function(ev){
+// just log; not intrusive
+console.warn('Resource error detected:', ev.target && ev.target.src ? ev.target.src : ev.message);
+}, true);
+</script>
+<audio id="bg-music" autoplay loop style="display:none;">
+<source src="forever you and me-Female.mp3" type="audio/mpeg">
+</audio>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const music = document.getElementById('bg-music');
+const playMusic = () => {
+music.volume = 1.0;
+music.play().catch(() => {});
+};
+playMusic();
+document.body.addEventListener('click', playMusic);
+});
+</script>
+
+</body>
+</html>
